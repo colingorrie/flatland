@@ -7,7 +7,7 @@ class World:
     def __init__(self, width, height):
         self.time = 0
         self.agents = []
-        self.state = np.zeros((width, height), dtype=Agent)
+        self.state = np.full((width, height), None, dtype=Agent)
 
     def add_agent(self, x, y):
         agent = Agent(x, y, energy=1)
