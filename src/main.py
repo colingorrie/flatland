@@ -9,18 +9,6 @@ def main():
     # Get that agent.
     agent = world.state[4][17]
 
-    print("BEFORE")
-    print(agent.x, agent.y)
-    print(world.state[4][17])
-    print(world.state[5][17])
-
-    agent.move(1, 0, world)
-
-    print("AFTER")
-    print(agent.x, agent.y)
-    print(world.state[4][17])
-    print(world.state[5][17])
-
 
 if __name__ == "__main__":
     main()
